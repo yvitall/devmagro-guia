@@ -61,5 +61,15 @@ public class Main {
         atvd5.setSalario(salario);
         atvd5.qtdSalarios();
 
+        //exercicio 6
+        System.out.println("\n------- EXERCICIO 6 -------");
+        System.out.println("Digite qualquer valor: R$");
+        double valorReajust = sc.nextDouble();
+        sc.nextLine();
+
+        Atvd6 atvd6 = new Atvd6();
+        atvd6.setValor(valorReajust);
+        System.out.println(atvd6.reajust());
+
     }
 }
