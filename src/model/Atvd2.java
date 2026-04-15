@@ -7,7 +7,7 @@ public class Atvd2 {
         this.valor = valor;
     }
 
-    public void ParOuImpar(int valor){
+    public void ParOuImpar(){
         if (valor % 2 != 0 ){
             if (valor < 0){
             System.out.println("O valor é IMPAR e NEGATIVO");

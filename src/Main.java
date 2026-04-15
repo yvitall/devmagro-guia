@@ -1,6 +1,4 @@
-import model.Atvd1;
-import model.Atvd2;
-import model.Atvd3;
+import model.*;
 
 import java.util.Locale;
 import java.util.Scanner;
@@ -29,7 +27,8 @@ public class Main {
         sc.nextLine();
 
         Atvd2 imparOuPar = new Atvd2();
-        imparOuPar.ParOuImpar(value2);
+        imparOuPar.setValor(value2);
+        imparOuPar.ParOuImpar();
 
         //exercicio 3
         System.out.println("\n------- EXERCICIO 3 -------");
@@ -42,6 +41,25 @@ public class Main {
 
         Atvd3 atvd3 = new Atvd3(a3, b3);
         System.out.println(atvd3.somaSe(atvd3.getA(), atvd3.getB()));
+
+        //exercicio 4
+        System.out.println("\n------- EXERCICIO 4 -------");
+        System.out.print("Digite um valor: ");
+        int ex4 = sc.nextInt();
+        sc.nextLine();
+        Atvd4 atvd4 = new Atvd4();
+        atvd4.setValor(ex4);
+        atvd4.antecSucessor();
+
+        //exercicio 5
+        System.out.println("\n------- EXERCICIO 5 -------");
+        System.out.print("Digite seu salário: R$");
+        double salario = sc.nextDouble();
+        sc.nextLine();
+
+        Atvd5 atvd5 = new Atvd5();
+        atvd5.setSalario(salario);
+        atvd5.qtdSalarios();
 
     }
 }

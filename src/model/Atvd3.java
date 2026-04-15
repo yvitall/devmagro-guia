@@ -19,9 +19,14 @@ public class Atvd3 {
 
     public int somaSe(int a, int b){
         if (saoIguais(a, b)){
+            int c = a+b;
+            System.out.println("C: " + c);
             return a+b;
+        } else {
+            int c = a*b;
+            System.out.println("C: " + c);
+            return a*b;
         }
-        return 0;
     }
     public boolean saoIguais(int a, int b){
         return a == b;
