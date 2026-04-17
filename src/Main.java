@@ -1,4 +1,5 @@
-import model.*;
+import model.Atvd8;
+import model.Atvd9;
 
 import java.util.Locale;
 import java.util.Scanner;
@@ -7,7 +8,7 @@ public class Main {
     public void main(String[] args) {
         Scanner sc = new Scanner(System.in).useLocale(Locale.US); //objeto tipo SCANNER
 
-        //exercicio 1
+       /* //exercicio 1
         System.out.print("Qual valor de A: ");
         int a = sc.nextInt();
         sc.nextLine();
@@ -70,6 +71,41 @@ public class Main {
         Atvd6 atvd6 = new Atvd6();
         atvd6.setValor(valorReajust);
         System.out.println(atvd6.reajust());
+
+        //exercicio 7
+        System.out.println("\n------- EXERCICIO 7 -------");
+        System.out.print("Digite 'VERDADEIRO' ou 'FALSO' para o primeiro valor: ");
+        String vl1 = sc.nextLine();
+        char convertVl1 = vl1.toLowerCase().charAt(0);
+        System.out.print("Digite 'VERDADEIRO' ou 'FALSO' para o segundo valor: ");
+        String vl2 = sc.nextLine();
+        char convertVl2 = vl2.toLowerCase().charAt(0);
+
+        Atvd7 atvd7 = new Atvd7();
+        atvd7.decided(convertVl1, convertVl2);
+        atvd7.isTrue();
+*/
+        //exercicio 8
+        System.out.println("\n------- EXERCICIO 8 -------");
+        System.out.print("Digite o valor de início: ");
+        int valorAtvd8 = sc.nextInt();
+        sc.nextLine();
+
+        Atvd8 atvd8 = new Atvd8();
+        atvd8.setInicio(valorAtvd8);
+        atvd8.decrescente();
+
+        //exercicio 9
+        System.out.println("\n------- EXERCICIO 9 -------");
+        Atvd9 atvd9 = new Atvd9();
+        System.out.print("Digite seu peso: ");
+        atvd9.setPeso(sc.nextDouble());
+        System.out.print("Digite sua altura: ");
+        atvd9.setAltura(sc.nextDouble());
+
+        atvd9.
+
+
 
     }
 }
